@@ -1,3 +1,10 @@
+// vite.config.ts mein ye line add karein
+export default defineConfig(({mode}) => {
+  const env = loadEnv(mode, '.', '');
+  return {
+    base: '/ravir-math-studio/', // 👈 Ye line zaroori hai GitHub Pages ke liye
+    plugins: [react(), tailwindcss()],
+    // ... baaki code ...
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
